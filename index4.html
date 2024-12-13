@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>index4</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <style>
+
+:root {
+  /* Font Families */
+  --font-primary: "Montserrat", serif;
+  --font-secondary: 'Lora', serif;
+  --font-mono: 'Courier New', monospace;}
+
+    *{
+      margin: 0%;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html,body{
+  width: 100%;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+.services{
+  width: 100%;
+  height:100vh;
+  display: flex;
+  background-color:rgb(252, 251, 251);
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font-primary);
+  flex-direction: column;
+  /* overflow: hidden; */
+  position: relative;
+ }
+
+ 
+ .services h1 {
+  font-size:15vw;
+  color: #d2d6db;
+  text-transform: uppercase;
+
+ }
+
+ .images-container{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ /* background-color:green; */
+ width:100%;
+ height: 50%;
+ position: absolute;
+ /* margin-left: 320vw; */
+ transition: transform 0.3s ease;
+ }
+
+ .services img {
+  position: absolute;
+  margin-top:75px;
+  transform-origin: bottom right; 
+
+}
+
+.img-1{
+  width:35vw;
+  height: 45vh;
+  /* background-color: red; */
+  object-fit: cover;
+  position:absolute;
+  border-radius: 20px;
+  z-index: 10;
+  /* transform: rotate(-5deg); */
+
+}
+.services .img1 {
+  transform: rotate(-5deg);
+  z-index: 10;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+
+}
+.img-2{
+  width:35vw;
+  height: 45vh;
+  /* background-color: red; */
+  object-fit: cover;
+  position:absolute;
+  z-index: 9;
+  border-radius: 20px;
+}
+.services .img2 {
+  transform: rotate(-1deg);
+  z-index: 9;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+
+}
+.img-3{
+  width:35vw;
+  height: 45vh;
+  /* background-color: red; */
+  object-fit: cover;
+  position:absolute;
+  border-radius: 20px;
+}
+.services .img3 {
+  transform: rotate(3deg);
+  z-index: 8;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+
+}
+
+.img-4{
+  width:35vw;
+  height: 45vh;
+  /* background-color: red; */
+  object-fit: cover;
+  position:absolute;
+  border-radius: 20px;
+}
+
+.services .img4 {
+  transform: rotate(7deg);
+  z-index: 7;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+
+}
+
+.img-5{
+  width:35vw;
+  height: 45vh;
+  /* background-color: red; */
+  object-fit: cover;
+  position:absolute;
+  border-radius: 20px;
+}
+.services .img5 {
+  transform: rotate(11deg);
+  z-index: 6;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+
+}
+.img-6{
+  width:35vw;
+  height: 45vh;
+  /* background-color: red; */
+  object-fit: cover;
+  position:absolute;
+  border-radius: 20px;
+}
+
+.services .img6 {
+  transform: rotate(15deg);
+  z-index: 5;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+
+}
+
+.img-7{
+  width:35vw;
+  height: 45vh;
+  /* background-color: red; */
+  object-fit: cover;
+  position:absolute;
+  /* transform: rotate(19deg); */
+  border-radius: 20p  x;
+}
+
+.services .img7 {
+  transform: rotate(19deg);
+  z-index: 4;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+
+}
+
+.img-8{
+  width:35vw;
+  height: 45vh;
+  /* background-color: red; */
+  object-fit: cover;
+  position:absolute;
+  /* transform: rotate(19deg); */
+  border-radius: 20px;
+}
+
+.services .img8 {
+  transform: rotate(23deg);
+  z-index: 3;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+
+}
+
+
+.slider-controls {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      padding: 0 50px;
+      transform: translateY(-50%);
+      z-index: 10000;
+      opacity: 0;
+    }
+
+    .slider-controls button {
+      width: 100px;
+      padding: 10px;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+
+    .slider-controls button:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+
+
+
+  </style>
+</head>
+<body>
+  <div class="services" id="services1">
+  
+    <h1>Services</h1>
+  <div class="images-container">
+    <div class="img-1">
+      <img class="img1" src="https://img.freepik.com/free-photo/vertebrae-physiotherapist-holding-artificial-spine_1303-26429.jpg?ga=GA1.1.225339577.1717430258&semt=ais_hybrid" alt="">
+    </div>
+    <div class="img-2">  <img  class="img2" src="https://img.freepik.com/premium-photo/happy-female-doctor-giving-high-five_1124848-153932.jpg?ga=GA1.1.225339577.1717430258&semt=ais_hybrid" alt=""></div>
+      <div class="img-3"><img  class="img3" src="https://img.freepik.com/premium-photo/doctor-white-coat-glasses-holding-red-heart-hospital-office-medical-health-care-doctor-staff-service-concept_168991-1736.jpg?ga=GA1.1.225339577.1717430258&semt=ais_hybrid" alt=""></div>
+      <div class="img-4">  <img  class="img4" src="https://img.freepik.com/free-photo/patient-with-brain-scan-discussing-with-researcher-neurological-doctor-while-adjusting-brainwave-scanning-headset-examining-diagnosis-disease-explaning-eeg-results-health-status-brain-functions_482257-13120.jpg?ga=GA1.1.225339577.1717430258&semt=ais_hybrid" alt=""></div>
+     <div class="img-5"> <img  class="img5" src="https://img.freepik.com/free-photo/can-you-hear-pain-when-i-push-here_329181-7672.jpg?ga=GA1.1.225339577.1717430258&semt=ais_hybrid" alt=""></div>
+     <div class="img-6"> <img  class="img6" src="https://img.freepik.com/free-photo/doctor-using-inspection-spatula-examine-patient-throat-ent-doctor-doing-throat-exam-woman-patient-opened-her-mouth-throat-checkup_657921-246.jpg?ga=GA1.1.225339577.1717430258&semt=ais_hybrid" alt=""></div>
+     <div class="img-7">
+      <img  class="img7" src="https://img.freepik.com/free-photo/doctor-talking-colleagues-about-surgery_23-2149352167.jpg?ga=GA1.1.225339577.1717430258&semt=ais_hybrid" alt=""> 
+      
+     </div>
+     <div class="img-8">
+      <img  class="img8" src="https://img.freepik.com/free-photo/doctor-talking-colleagues-about-surgery_23-2149352167.jpg?ga=GA1.1.225339577.1717430258&semt=ais_hybrid" alt=""> 
+      
+     </div>
+     
+    
+  </div>
+  <div class="slider-controls">
+    <button class="prev">Prev</button>
+    <button class="next">Next</button>
+  </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/MotionPathPlugin.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+      // services
+
+
+      gsap.registerPlugin(ScrollTrigger);
+  // Create a GSAP timeline
+  const tl4 = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".services",
+      start: "top 80%", // Animation starts when services section comes into view
+    },
+  });
+
+  // Heading animation
+  tl4.from(".services h1", {
+    x: -200, // Start 200px to the left
+    opacity: 0, // Fade in
+    duration: 1, // Animation duration
+    ease: "power2.out", // Smooth ease
+  }, 0); // Start at the same time (0 seconds into the timeline)
+
+
+
+  // Images animation
+  tl4.fromTo(
+    ".services img",
+    {
+      y: 200, // Start 200px below
+      rotation: 0, // Start with no rotation
+    },
+    {
+      y: 0, // Settle in original position
+      rotation: (index) => [0, -1, 3, 7, 11, 15, 19,23][index], // Settle to specified rotation
+      duration: 1.5, // Animation duration
+      ease: "power2.out", // Smooth ease
+    },
+    0 // Start at the same time (0 seconds into the timeline)
+  );
+  
+
+ tl4.to(".slider-controls",{
+  opacity:1,
+  duration: 1, // Animation duration
+  ease: "power2.out", // Smooth ease
+ })
+  
+ 
+  
+
+
+// Horizontal alignment and reset rotation after animation with margins
+gsap.to(".services img", {
+  x: (index) => (index - 4) * (300 + 500), // Spacing between the images + margin (e.g., 300px margin on each side)
+  rotation: 0,
+  y:50,
+  delay: 1.5, // Wait until animation finishes
+  duration: 1,
+  scale:1.2,
+  ease: "power2.out",
+});
+
+
+
+const imagesContainer = document.querySelector('.images-container');
+    const items = document.querySelectorAll('.images-container img');
+    const prevButton = document.querySelector('.prev');
+    const nextButton = document.querySelector('.next');
+    const totalItems = items.length;
+    let index = 0;
+    
+
+    function moveToSlide() {
+      imagesContainer.style.transform = `translateX(-${index *60}%)`;
+    }
+
+    prevButton.addEventListener('click', () => {
+      index--;
+      if (index < 0) {
+        index = totalItems - 1; // Wrap to the last image
+      }
+      moveToSlide();
+    });
+
+    nextButton.addEventListener('click', () => {
+      index++;
+      if (index >= totalItems) {
+        index = 0; // Wrap to the first image
+      }
+      moveToSlide();
+    });
+
+
+    </script>
+</body>
+</html>
